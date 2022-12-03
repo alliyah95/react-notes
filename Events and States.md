@@ -35,3 +35,4 @@
     };
 ```
 - After the function above is executed, the value of `title` becomes `Updated value!`
+- **IMPORTANT:** Remember to use  `title` instead of `props.title` in your JSX code then because it is the one being updated, not `props.title`, whose value never changes because this only stores the initial value.
