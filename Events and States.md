@@ -36,3 +36,77 @@
 ```
 - After the function above is executed, the value of `title` becomes `Updated value!`
 - **IMPORTANT:** Remember to use  `title` instead of `props.title` in your JSX code then because it is the one being updated, not `props.title`, whose value never changes because this only stores the initial value.
+
+<br>
+
+### Handling Multiple Events in One State
+- In the code below, we may want to handle all input changes for `title`, `amount`, and `date`.
+``` jsx
+    return (
+        <form>
+            <div className="new-expense__controls">
+                <div className="new-expense__control">
+                    <label>Title</label>
+                    <input type="text" onChange={titleChangeHandler} />
+                </div>
+                <div className="new-expense__control">
+                    <label>Amount</label>
+                    <input
+                        type="number"
+                        min="0.01"
+                        step="0.01"
+                        onChange={amountChangeHandler}
+                    />
+                </div>
+                <div className="new-expense__control">
+                    <label>Date</label>
+                    <input
+                        type="date"
+                        min="2019-01-01"
+                        max="2022-12-31"
+                        onChange={dateChangeHandler}
+                    />
+                </div>
+            </div>
+            <div className="new-expense__actions">
+                <button type="submit">Add Expense</button>
+            </div>
+        </form>
+    );
+```
+- One way to do this is by calling `useState()` multiple times like in the code below:
+``` jsx
+    const [enteredTitle, setEnteredTitle] = useState("");
+    const [enteredAmount, setEnteredAmount] = useState("");
+    const [enteredDate, setEnteredDate] = useState("");
+```
+- Another is by calling `useState` only once, but passing an object to it containing the user inputs to which we want to listen to for events
+``` jsx
+    const [userInput, setUserInput] = useState({
+        enteredTitle: "",
+        enteredAmount: "",
+        enteredDate: "",
+    });
+```
+- The event handler functions would then look like these:
+``` jsx
+    const titleChangeHandler = (evt) => {
+        setUserInput((prevState) => {
+            return { ...prevState, enteredTitle: evt.target.value };
+        });
+    };
+
+    const amountChangeHandler = (evt) => {
+        setUserInput((prevState) => {
+            return { ...prevState, enteredAmount: evt.target.value };
+        });
+    };
+
+    const dateChangeHandler = (evt) => {
+        setUserInput((prevState) => {
+            return { ...prevState, enteredDate: evt.target.value };
+        });
+    };
+```
+- We use the spread operator `...` to ensure that all other values in the object are saved.
+- `prevState` stores a copy of the object, then we return it together with the overidden key-value pair. 
