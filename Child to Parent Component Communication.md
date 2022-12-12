@@ -43,6 +43,14 @@ _ExpenseForm.js_
 <br>
 
 ### Solution
+#### TLDR
+- Gawa ka ng function sa parent component with a parameter representing the data na ipa-pass ng child component.
+- Make this function a property of the children component kapag ica-call yung child component sa file ng parent component.
+- Sa form sa child element, specically sa form submission handler function, just call the function and pass in the data as an argument.
+```
+    props.parentFunction()
+```
+#### Long explanation
 - On the parent component, add a `property` that points to a `function` to the child component when it is **called**.
 - Say in `NewExpense.js`, originally, `ExpenseForm`, which is its child, did not have the `onSaveExpenseData` property.
 ``` jsx
