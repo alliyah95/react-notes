@@ -13,11 +13,23 @@
 -   [Events and States](https://github.com/alliyah95/react-notes/blob/main/Events%20and%20States.md)
 -   [Child to Parent Component Communication](https://github.com/alliyah95/react-notes/blob/main/Child%20to%20Parent%20Component%20Communication.md)
 
-### Forms and User Inputs
+### Hooks
+-   [`useRef`](https://github.com/alliyah95/react-notes/blob/main/React%20Refs.md)
+-   [`useContext`](https://github.com/alliyah95/react-notes/blob/main/Context%20-%20useContext.md)
+-   [`useReducer`](https://github.com/alliyah95/react-notes/blob/main/Reducers%20-%20useReducer.md)
+-   [`useEffect`](https://github.com/alliyah95/react-notes/blob/main/Side%20Effects%20-%20useEffect.md)
 
+### Forms and User Inputs
 -   [Retrieving User Inputs](https://github.com/alliyah95/react-notes/blob/main/Handling%20User%20Inputs%20From%20Forms.md)
 -   [Handling Form Submissions](https://github.com/alliyah95/react-notes/blob/main/Handling%20Form%20Submissions.md)
 
-### Practice Files
+### Styling Components
+-   [CSS Modules](https://github.com/alliyah95/react-notes/blob/main/Using%20CSS%20Modules.md)
+-   [Styled Components](https://github.com/alliyah95/react-notes/blob/main/Styled%20Components.md)
 
+### Others
+-   [React Portals](https://github.com/alliyah95/react-notes/blob/main/React%20Portals.md)
+-   [The `Wrapper` Element/Component](https://github.com/alliyah95/react-notes/blob/main/Wrapper%20Element.md)
+
+### Practice Files
 -   [Components, Composition, States, Child to Parent Communication, Form Input and Submission Handling](https://github.com/alliyah95/react-practice-files/tree/react-practice-01-1)
