@@ -27,6 +27,9 @@
 -   [CSS Modules](https://github.com/alliyah95/react-notes/blob/main/Using%20CSS%20Modules.md)
 -   [Styled Components](https://github.com/alliyah95/react-notes/blob/main/Styled%20Components.md)
 
+### Routing
+-   [Basic Usage of Routers](https://github.com/alliyah95/react-notes/blob/main/Basic%20Usage%20of%20Routers.md)
+-   [Nested Routes](https://github.com/alliyah95/react-notes/blob/main/Nested%20Routes.md)
 ### Others
 -   [React Portals](https://github.com/alliyah95/react-notes/blob/main/React%20Portals.md)
 -   [The `Wrapper` Element/Component](https://github.com/alliyah95/react-notes/blob/main/Wrapper%20Element.md)
