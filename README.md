@@ -30,6 +30,12 @@
 ### Routing
 -   [Basic Usage of Routers](https://github.com/alliyah95/react-notes/blob/main/Basic%20Usage%20of%20Routers.md)
 -   [Nested Routes](https://github.com/alliyah95/react-notes/blob/main/Nested%20Routes.md)
+-   [Using the `NavLink` Component](https://github.com/alliyah95/react-notes/blob/main/Using%20NavLink.md)
+-   [Using the `Navigate` Component](https://github.com/alliyah95/react-notes/blob/main/Using%20the%20Navigate%20component.md)
+-   [The `useNavigate` Hook](https://github.com/alliyah95/react-notes/blob/main/The%20useNavigate%20hook.md)
+-   [The `useRoutes` Hook](https://github.com/alliyah95/react-notes/blob/main/The%20useRoutes%20hook.md)
+-   [Other info about Routes](https://github.com/alliyah95/react-notes/blob/main/Other%20Info%20About%20Routes.md)
+
 ### Others
 -   [React Portals](https://github.com/alliyah95/react-notes/blob/main/React%20Portals.md)
 -   [The `Wrapper` Element/Component](https://github.com/alliyah95/react-notes/blob/main/Wrapper%20Element.md)
